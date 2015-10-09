@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 mai 2014, 14:20:38
+    Author     : Ervin
+*/
+
+#video-wrap video {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.view1 video#clip2 , .view2 #home_video {
+    width: 70px;
+    height: 41px;
+    left: 630px;
+    top:  40px;
+    z-index: 10;
+    cursor: pointer;
+    border: 1px solid rgba(50,50,50,.6);
+}
+
+#video-wrap , #player{
+    width: 720px;
+    height: 350px;
+}
+#video-wrap {
+    position: relative;
+}
+#video-bg, video {
+    width: 720px;
+    height: 320px
+}
+canvas.ambilight-left,
+canvas.ambilight-right {
+    position: absolute;
+    width: 300px;
+    height: 200%;
+    top: -50%;
+    z-index: -1;
+}
+canvas.ambilight-left {
+    left: -270px;
+    top: -53%;
+    background-image: url(mask3-left.png);
+}
+canvas.ambilight-right {
+    right: -270px;
+    top: -51%;
+    background-image: url(mask3-right.png);
+}
